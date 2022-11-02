@@ -1,0 +1,111 @@
+:root {
+  --green: #009587;
+  --yellow: #feea3a;
+}
+.limiter {
+  background: #bbb9b9;
+}
+.header {
+  height: 700px;
+}
+
+.bi-check-square-fill {
+  color: var(--yellow);
+}
+#btn1 {
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.97);
+  height: 50px;
+  border-radius: 0;
+}
+.cards {
+  width: 940px;
+}
+.card1__color {
+  height: 200px;
+  background: var(--yellow);
+}
+
+.card1__start,
+.card1__price,
+.icon__title,
+.email__comment {
+  color: #009587;
+}
+.card2__color {
+  height: 200px;
+  background: var(--green);
+}
+.card3__color {
+  height: 200px;
+  background: red;
+}
+.card__title,
+.card__start,
+.card__period,
+.footer__title,
+.social__link {
+  color: #fff;
+}
+
+.card__price {
+  color: var(--yellow);
+}
+#off {
+  width: 50px;
+  height: 50px;
+}
+.btn-primar {
+  background: var(--green);
+}
+#s3__icon{
+  color: var(--green)
+}
+.icon__left {
+  background: var(--yellow);
+  width: 100px;
+  height: 100px;
+}
+.s4__person {
+  background: var(--green);
+}
+.list__group {
+  height: 450px;
+}
+#tabpanel {
+  color: var(--green);
+}
+.s6__mail,
+.navbar {
+  background: var(--yellow);
+}
+#btn__mail {
+  background: var(--green);
+  color: #fff;
+  border-radius: 0;
+}
+#txt__mail {
+  border-radius: 0;
+}
+.footer {
+  background: var(--green);
+}
+#footer__contact,
+.link {
+  color: var(--yellow);
+font-size: 12px;
+}
+.copy__right {
+  font-size: 10px;
+}
+.list {
+  padding: 0;
+}
+.social{
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #047a6f;
+}

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./ex2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+</head>
+
+<body class="limiter d-flex flex-column justify-content-center align-items-center">
+
+    <header class="header col-12 mb-5 position-relative d-block">
+        <div class="header__main  col-12 h-100 d-flex flex-row justify-content-center align-items-center"
+            style="background-image: url(./bg_header.webp); height: 300px; background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="header__left d-flex col-6 flex-column gap-2">
+                <div class="header__logo d-flex flex-row justify-content-start align-item-center">
+                    <img src="./logo-bg.webp" alt="logo" class="logo__img pt-3">
+                    <div class="logo__title fs-1 text-light fw-bold">HOSTING</div>
+                </div>
+                <div class="title display-5 fw-bold text-warning">Unlimited Web Hosting</div>
+                <div class="comment fs-2 text-warning">Web Hosting Made EASY And AFFORDABLE!</div>
+                <div class="li d-flex flex-row gap-3">
+                    <div class="left__ul d-flex flex-column">
+                        <i class="bi bi-check-square-fill">
+                            UNLIMITED Disk Space
+                        </i>
+                        <i class="bi bi-check-square-fill">
+                            UNLIMITED Bandwidth
+                        </i>
+                        <i class="bi bi-check-square-fill">
+                            EASY Control Panel (Try Demo)
+                        </i>
+                        <i class="bi bi-check-square-fill">
+                            1-CLICK Script Installs
+                        </i>
+                        <i class="bi bi-check-square-fill">
+                            $100 Google AdWords Offer
+                        </i>
+                    </div>
+                    <div class="right__ul d-flex flex-column">
+                        <i class="bi bi-check-square-fill">
+                            4,500 Free Website Templates
+                        </i>
+                        <i class="bi bi-check-square-fill">
+                            99.9% Uptime Guarantee
+                        </i>
+                        <i class="bi bi-check-square-fill">
+                            45 Day Money Back Guarantee
+                        </i>
+                        <i class="bi bi-check-square-fill">
+                            24/7/365 Technical Support
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <div class="header__right col-2 d-flex flex-column align-items-end gap-3">
+
+                <div class="right__title fs-4 text-light">
+                    Starting at Only
+                </div>
+                <div class="right__price display-1 fw-bold text-light">$3.96</div>
+                <small class="text-light">/mo*</small>
+                <button type="button" id="btn1" class="btn btn-warning mt-3 fs-4 col-12 border-0 ">Get started
+                    now!</button>
+            </div>
+        </div>
+    </header>
+    <section class="section__1 pb-5 row d-flex flex-column gap-5 justify-content-between">
+        <div class="cards row d-flex flex-row justify-content-center align-items-center gap-3 col-12 flex-wrap">
+            <div class="card col-3 p-0 border-0 shadow" style="width: 18rem;">
+                <div
+                    class="card1__color col-12 p-3 bg-warning d-flex flex-column justify-content-center align-items-start">
+                    <div class="card1__title fs-2">Reseller Hosting</div>
+                    <div class="card1__price fs-5">Start at</div>
+                    <div class="card1__price fs-1">
+                        $19.96
+                        <small class="card__period1 fs-6">/mo*</small>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">UNLIMITED Disk Space<br>
+                        UNLIMITED Bandwidth<br>
+                        EASY Control Panel (Try Demo)<br>
+                        1-CLICK Script Installs<br>
+                        $100 Google AdWords Offer<br>
+                        4,500 Free Website Templates<br>
+                        99.9% Uptime Guarantee<br>
+                    </p>
+                    <a href="#" class="btn btn-success col-12">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card col-3 p-0 border-0 shadow" style="width: 18rem;">
+                <div class="card2__color col-12 p-3 d-flex flex-column justify-content-center align-items-start">
+                    <div class="card__title fs-2">Reseller Hosting</div>
+                    <div class="card__start fs-5">Start at</div>
+                    <div class="card__price fs-1">
+                        $19.96
+                        <small class="card__period fs-6">/mo*</small>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">UNLIMITED Disk Space<br>
+                        UNLIMITED Bandwidth<br>
+                        EASY Control Panel (Try Demo)<br>
+                        1-CLICK Script Installs<br>
+                        $100 Google AdWords Offer<br>
+                        4,500 Free Website Templates<br>
+                        99.9% Uptime Guarantee<br>
+                    </p>
+                    <a href="#" class="btn btn-success col-12">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card col-3 p-0 border-0 shadow" style="width: 18rem;">
+                <div class="card3__color col-12 p-3 d-flex flex-column justify-content-center align-items-start">
+                    <div class="card__title fs-2">Reseller Hosting</div>
+                    <div class="card__start fs-5">Start at</div>
+                    <div class="card__price fs-1 d-flex align-items-end gap-3 flex-row">
+                        $19.96
+                        <small class="card__period fs-6">/mo*</small>
+                        <div class=" justify-content-center  ">
+                            <div id="off"
+                                class="off rounded-circle lh-1 bg-warning text-center text-dark fw-bold fs-6 d-flex justify-content-center align-items-center">
+                                20% <br> off
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">UNLIMITED Disk Space<br>
+                        UNLIMITED Bandwidth<br>
+                        EASY Control Panel (Try Demo)<br>
+                        1-CLICK Script Installs<br>
+                        $100 Google AdWords Offer<br>
+                        4,500 Free Website Templates<br>
+                        99.9% Uptime Guarantee<br>
+                    </p>
+                    <a href="#" class="btn btn-success col-12">Go somewhere</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="s1__step row d-flex flex-row gap-5 justify-content-center align-items-center flex-wrap">
+            <img src="./s1.webp" alt="image" class="s__img col-3 rounded-circle">
+            <div class="step__r col-5">
+                <h1>We Are With You Every Step
+                    Of The Way!</h1>
+                <div>
+                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing
+                    elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="s2__quick row pb-5 pt-5 d-flex flex-row gap-5 justify-content-center align-items-center bg-light flex-wrap">
+        <div class="s2__left col-5 ">
+            <h1>Get Started! Quick and Easy</h1>
+            <div>
+                Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu
+                fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod
+                tempor
+                incididunt.
+            </div>
+            <button type="button" class="btn btn-success mt-3 col-4">Learn more</button>
+        </div>
+        <img src="./s2.webp" alt="image" class="s__img col-3 rounded-circle">
+    </section>
+    <section class="s3__icons  d-flex flex-column align-items-center justify-content-center gap-5 pt-5 pb-5">
+        <div class="row justify-content-center ">
+            <dive class="icon col-4 d-flex flex-row gap-3  align-items-center">
+                <div class=" justify-content-center align-items-center">
+                    <div class="icon__left shadow rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="bi bi-cloud-check-fill fs-1" id="s3__icon"></i>
+                    </div>
+                </div>
+                <div class="icon__right ">
+                    <p class="icon__title fs-4">Dolore magna aliqua</p>
+                    <p class="icon__comment fs-6">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </dive>
+            <dive class="icon col-4 d-flex flex-row gap-3  align-items-center">
+                <div class=" justify-content-center align-items-center">
+                    <div class="icon__left shadow rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="bi bi-keyboard-fill fs-1" id="s3__icon"></i>
+                    </div>
+                </div>
+                <div class="icon__right ">
+                    <p class="icon__title fs-4">Dolore magna aliqua</p>
+                    <p class="icon__comment fs-6">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </dive>
+        </div>
+        <div class="row justify-content-center ">
+            <dive class="icon col-4 d-flex flex-row gap-3  align-items-center">
+                <div class=" justify-content-center align-items-center">
+                    <div class="icon__left shadow rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="bi bi-gear-fill fs-1" id="s3__icon"></i>
+                    </div>
+                </div>
+                <div class="icon__right ">
+                    <p class="icon__title fs-4">Dolore magna aliqua</p>
+                    <p class="icon__comment fs-6">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </dive>
+            <dive class="icon col-4 d-flex flex-row gap-3  align-items-center">
+                <div class=" justify-content-center align-items-center">
+                    <div class="icon__left shadow rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="bi bi-chat-left-dots-fill fs-1" id="s3__icon"></i>
+                    </div>
+                </div>
+                <div class="icon__right ">
+                    <p class="icon__title fs-4">Dolore magna aliqua</p>
+                    <p class="icon__comment fs-6">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </dive>
+        </div>
+        </div>
+    </section>
+    <section class="s4__person row col-12 pt-5 pb-5 d-flex justify-content-center ">
+        <div class="person col-3 d-flex flex-column">
+            <img src="./ps1.webp" alt="image" class="person col-5 rounded-circle">
+            <div class="d-flex align-items-start">
+                <i class="bi bi-quote fs-3 text-warning"></i>
+                <p class="pt-2 text-light">&ensp;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore.
+                </p>
+            </div>
+            <a href="" class="text-warning text-decoration-none">- Lorem ipsum
+            </a>
+        </div>
+        <div class="person col-3 d-flex flex-column">
+            <img src="./ps2.webp" alt="image" class="person col-5 rounded-circle">
+            <div class="d-flex align-items-start">
+                <i class="bi bi-quote fs-3 text-warning"></i>
+                <p class="pt-2 text-light">&ensp;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore.
+                </p>
+            </div>
+            <a href="" class="text-warning text-decoration-none">- Lorem ipsum
+            </a>
+        </div>
+        <div class="person col-3 d-flex flex-column">
+            <img src="./ps3.webp" alt="image" class="person col-5 rounded-circle">
+            <div class="d-flex align-items-start">
+                <i class="bi bi-quote fs-3 text-warning"></i>
+                <p class="pt-2 text-light">&ensp;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore.
+                </p>
+            </div>
+            <a href="" class="text-warning text-decoration-none">- Lorem ipsum
+            </a>
+        </div>
+    </section>
+    <section class="s5__panel pt-5 pb-5 col-8 d-flex justify-content-center">
+
+        <div class="list__group row col-12">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action text-center active " id="list-home-list"
+                        data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Reseller Hosting
+                        Features
+                    </a>
+                    <a class="list-group-item list-group-item-action text-center" id="list-profile-list"
+                        data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Free With
+                        Each Reseller Plan
+                    </a>
+                    <a class="list-group-item list-group-item-action text-center" id="list-messages-list"
+                        data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">WHM Control
+                        Panel
+                    </a>
+                    <a class="list-group-item list-group-item-action text-center" id="list-settings-list"
+                        data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">cPanel
+                        Control Panel
+                    </a>
+                    <a class="list-group-item list-group-item-action text-center" id="list-settings-list"
+                        data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Programming
+                        & Databases
+                    </a>
+                </div>
+            </div>
+            <div class="col-8 border border-dark">
+                <div class="tab-content col-12 position-relative " id="nav-tabContent">
+                    <div class="tab-pane position-absolute fade show active gap-3 d-flex flex-column  " id="list-home"
+                        role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="">
+                            <p class="fs-1">Dolore magna aliqua</p>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane position-absolute fade  gap-1 d-flex flex-column" id="list-profile"
+                        role="tabpanel" aria-labelledby="list-profile-list">
+                        <p class="fs-1 ">Free With
+                            Each Reseller Plan</p>
+                        <div class="d-flex flex-row justify-content-center gap-5">
+                            <div class="col-5">
+                                <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                </div>
+                                <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                    elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                </div>
+                                <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                    elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center gap-5">
+                            <div class="col-5">
+                                <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                </div>
+                                <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                    elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                </div>
+                                <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                    elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center gap-5">
+                            <div class="col-5">
+                                <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                </div>
+                                <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                    elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                </div>
+                                <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                    elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane position-absolute fade gap-3 d-flex flex-column" id="list-messages"
+                        role="tabpanel" aria-labelledby="list-messages-list">
+                        <div class="">
+                            <p class="fs-1">WHM Control
+                                Panel</p>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane position-absolute fade gap-3 d-flex flex-column" id="list-settings"
+                        role="tabpanel" aria-labelledby="list-settings-list">
+                        <div class="">
+                            <p class="fs-1">cPanel
+                                Control Panel</p>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane position-absolute fade gap-3 d-flex flex-column" id="list-settings"
+                        role="tabpanel" aria-labelledby="list-settings-list">
+                        <div class="">
+                            <p class="fs-1">Programming
+                                & Databases</p>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center gap-5">
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div id="tabpanel" class="mb-2 fw-bold">Dolore magna aliqua
+                                    </div>
+                                    <div id="tabpanel" class="lh-1">Lorem ipsum dolor sit amet conse ctetur adipisicing
+                                        elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="s6__mail col12 d-flex flex-column justify-content-center align-items-center pb-5 pt-5">
+        <div class="col-8 ">
+            <nav class="navbar col-12 ">
+                <div class="container-fluid">
+                    <a class="navbar-brand col-1 fs-2">Subscribe</a>
+                    <form class="d-flex col-10" role="search">
+                        <input id="txt__mail" class="form-control col- me-2 border-0" type="search" placeholder="Enter please your e-mail" aria-label="Search">
+                        <button id="btn__mail" class="btn col-2 btn-outline-success shadow border-0" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="email__comment col-8 fs-6">
+            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+    </section>
+    <footer class="footer col-12">
+
+        <footer class="pt-5 pb-5">
+            <div class="container d-flex flex-row justify-content-center align-items-center">
+                <div class="row col-11 ">
+                    <div class="col">
+                        <h2 class="footer__title" >Hosting</h2>
+                        <ul class="list" style="list-style: none;">
+                            <li><a href="#" class="link text-decoration-none">Web Hosting</a></li>
+                            <li><a href="#" class="link text-decoration-none">Reseller Hosting</a></li>
+                            <li><a href="#" class="link text-decoration-none">VPS Hosting</a></li>
+                            <li><a href="#" class="link text-decoration-none">Dedicated Hosting</a></li>
+                            <li><a href="#" class="link text-decoration-none">Application Hosting</a></li>
+                            <li><a href="#" class="link text-decoration-none">Windows Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2 class="footer__title">Domains</h2>
+                        <ul class="list" style="list-style: none;">
+                            <li><a href="#" class="link text-decoration-none">Register Domains</a></li>
+                            <li><a href="#" class="link text-decoration-none">Transfer Domains</a></li>
+                            <li><a href="#" class="link text-decoration-none">Manage Domains</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2 class="footer__title" >Support</h2>
+                        <ul class="list" style="list-style: none;">
+                            <li><a href="#" class="link text-decoration-none">Customer Portal</a></li>
+                            <li><a href="#" class="link text-decoration-none">Support Portal</a></li>
+                            <li><a href="#" class="link text-decoration-none">Video Tutorials</a></li>
+                            <li><a href="#" class="link text-decoration-none">Forums</a></li>
+                            <li><a href="#" class="link text-decoration-none">Live Chat</a></li>
+                            <li><a href="#" class="link text-decoration-none">Business On Tapp</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2 class="footer__title">About</h2>
+                        <ul class="list" style="list-style: none;">
+                            <li><a href="#" class="link text-decoration-none">About </a></li>
+                            <li><a href="#" class="link text-decoration-none">Awards &amp; Reviews</a></li>
+                            <li><a href="#" class="link text-decoration-none">Press &amp; Media</a></li>
+                            <li><a href="#" class="link text-decoration-none">Company Blog</a></li>
+                            <li><a href="#" class="link text-decoration-none">Contact Us</a></li>
+                            <li><a href="#" class="link text-decoration-none">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col ">
+                        <h2 class="footer__title">Contacts</h2>
+                        <address class="address footer__title"><i class="bi bi-geo-alt-fill " id="footer__contact"></i> 4578 Marmora Road,Glasgow D04 89GR</address>
+                        <address class="phone footer__title"><i class="bi bi-telephone-fill " id="footer__contact"></i> 800-2345-6789</address>
+                        <address class="phone footer__title"><i class="bi bi-telephone-fill " id="footer__contact"></i> 800-2345-6789</address>
+                        <ul class="socials-list nav gap-1">
+                            <div class="social">
+                                <li><i class="bi social__link bi-twitter "></i></li>
+                            </div>
+                            <div class="social">
+                                <li><i class="bi social__link bi-facebook"></i></li>
+                            </div>
+                            <div class="social">
+                                <li><i class="bi social__link bi-skype"></i></li>
+                            </div>
+                            <div class="social">
+                                <li><i class="bi social__link bi-google"></i></li>
+                            </div>
+                            <div class="social">
+                                <li><i class="bi social__link bi-instagram"></i></li>
+                            </div>
+                        </ul>
+                        <p class="copyright footer__title copy__right">
+                            Hosting © <span id="copyright-year">2022</span>. All rights reserved.
+                            <!-- {%FOOTER_LINK} -->
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
